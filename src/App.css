@@ -30,3 +30,15 @@
     transform: rotate(360deg);
   }
 }
+
+.App-background-red {
+  background-color: red;
+}
+
+.App-background-green {
+  background-color: green;
+}
+
+.App-background-blue {
+  background-color: blue;
+}
