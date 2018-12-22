@@ -6,13 +6,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      background: 'App-background-red',
+      backgroundClass: 'red',
     };
   }
 
   handleClick = (color) => {
     this.setState({
-      background: color,
+      backgroundClass: color,
     });
   };
 
@@ -20,10 +20,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <div className={this.state.background}>Hello World!</div>
-          <input onClick={() => this.handleClick('App-background-red')} type="button" value="red" />
-          <input onClick={() => this.handleClick('App-background-green')} type="button" value="green" />
-          <input onClick={() => this.handleClick('App-background-blue')} type="button" value="blue" />
+          <div className={this.state.backgroundClass}>Hello World!</div>
+          <button onClick={() => this.handleClick('red')}> red </button>
+          <button onClick={() => this.handleClick('green')}>green</button>
+          <button onClick={() => this.handleClick('blue')}>blue</button>
         </header>
       </div>
     );
